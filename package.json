@@ -1,0 +1,27 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bridge — P2P звонки, демонстрация экрана, доска и чат. Next.js, деплой на Vercel.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "relay": "node relay/server.js",
+    "check": "node tools/check-all.mjs",
+    "test": "node tools/unit.mjs",
+    "test:site": "node tools/smoke.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.27",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1"
+  }
+}
